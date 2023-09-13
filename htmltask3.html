@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML TASK 3</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .centered-box {
+            border: 2px solid black;
+            padding: 20px;
+            width: 600px;
+            text-align: left;
+            background-color: white;
+        }
+
+        .centered-box a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .centered-box a:not(:last-child)::after {
+            content: " | ";
+        }
+
+        .centered-box a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="centered-box">
+        <p>Click any of the following links:</p>
+        <a href="#" target="_blank">Opens in New</a>
+        <a href="#" target="_self">Opens in Self</a>
+        <a href="#" target="_parent">Opens in Parent</a>
+        <a href="#" target="_blank">Opens in Body</a>
+        <a href="mailto:youremail@example.com">Send email</a>
+    </div>
+</body>
+</html>
+
+
+
+

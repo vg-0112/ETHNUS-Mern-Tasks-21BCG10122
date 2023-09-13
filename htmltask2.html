@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML TASK 2</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .nested-list {
+            border: 2px solid black;
+            padding: 20px;
+            width: 300px;
+            text-align: left;
+            background-color: white;
+        }
+
+        ul {
+            list-style-type: disc; /* Use bullet points for the main list */
+            padding-left: 20px; /* Add left padding for indentation */
+        }
+
+        ul li {
+            line-height: 1.5;
+        }
+
+        ul ul {
+            list-style-type: disc; /* Remove default bullet points for sublists */
+            margin-left: 20px; /* Add left margin for sublist indentation */
+            padding-left: 10px; /* Add padding for sublist items */
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="nested-list">
+        <p>Lists can be nested (list inside list):</p>
+        <ul>
+            <li>Coffee</li>
+            <li>Tea
+                <ul>
+                    <li>Black Tea</li>
+                    <li>Green Tea</li>
+                </ul>
+            </li>
+            <li>Milk</li>
+        </ul>
+    </div>
+</body>
+</html>
